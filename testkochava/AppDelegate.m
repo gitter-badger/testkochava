@@ -9,15 +9,30 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
+#import "TrackAndAd.h"
+
+@property(readonly) KochavaTracker *kochavaTracker;
 
 @end
 
 @implementation AppDelegate
 
+@synthesize kochavaTracker;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSDictionary *initDict = [NSDictionary dictionaryWithObjectsAndKeys:
+                              @"myKochavaAppGUID", @"kochavaAppId",
+                              nil];
+    kochavaTracker = [[KochavaTracker alloc] initKochavaWithParams:initDict];
+    kochavaTracker.trackerDelegate = self;
+    [self.kochavaTracker enableConsoleLogging:YES];
     return YES;
+}
+
+- (void) Kochava_attributionResult:(NSDictionary *)attributionResult
+{
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

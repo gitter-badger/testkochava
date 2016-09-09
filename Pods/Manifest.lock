@@ -1,0 +1,10 @@
+PODS:
+  - Kochava (20160907.1)
+
+DEPENDENCIES:
+  - Kochava
+
+SPEC CHECKSUMS:
+  Kochava: 74f6552301093dcb469cac0861e2be701e5cc251
+
+COCOAPODS: 0.39.0

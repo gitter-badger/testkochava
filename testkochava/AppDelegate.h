@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import "TrackAndAd.h"
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate, KochavaTrackerClientDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

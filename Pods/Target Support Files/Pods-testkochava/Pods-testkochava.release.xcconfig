@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Kochava"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Kochava"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Kochava"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"TrackAndAd" -framework "AdSupport" -framework "CoreLocation" -framework "Foundation" -framework "SystemConfiguration" -framework "UIKit" -framework "iAd"
+PODS_ROOT = ${SRCROOT}/Pods
