@@ -1,5 +1,7 @@
 # testkochava
 
+Also, I ger: [Line 723] Kochava library - you MUST send and appId OR a partner Id/Name pair
+
 I am looking to get back attributes from Kochava in:
 
 - (void) Kochava_attributionResult:(NSDictionary *)attributionResult
