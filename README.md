@@ -6,7 +6,7 @@ I am looking to get back attributes from Kochava in:
 {
 }
 
-I do get:
+I do get the following in the console:
 
 - [KochavaTracker appendBatchEvent:] 
 
